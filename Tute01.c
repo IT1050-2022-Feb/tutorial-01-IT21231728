@@ -2,10 +2,23 @@
 
    Write a C program to input marks of two subjects. Calculate and print the average of the two marks. */
 
-#include <stdio.h>
+#include<stdio.h>
+int main()
+{
+    int mark1,mark2,total;
+    float avarage;
+    
+    printf("Enter Mark1:");
+    scanf("%d", &mark1);
 
-int main() {
-  
-  return 0;
+    printf("Enter Mark2:");
+    scanf("%d", &mark2);
+
+    total=mark1+mark2;
+    avarage=total/2;
+    
+    printf("Avarage is  %.2f", avarage);
+    
+    return 0;
 }
 
